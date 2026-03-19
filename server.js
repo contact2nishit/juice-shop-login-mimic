@@ -72,7 +72,6 @@ app.post('/login', [
         }
 
         if (row) {
-            // In a real app, you would issue a JWT or session here
             res.json({ success: true, message: 'Login successful! Welcome back, ' + row.email });
         } else {
             res.status(401).json({ success: false, message: 'Invalid email or password.' });
