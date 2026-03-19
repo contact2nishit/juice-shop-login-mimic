@@ -10,9 +10,10 @@ This project is a simple implementation of a login form that mimics the OWASP Ju
     *   Checks if fields are empty.
     *   Verifies that the email contains an "@" symbol.
     *   Ensures the password is at least 8 characters long.
-*   **Server-Side Validation (Node.js/Express)**:
-    *   Re-validates the input data on the server to ensure security.
-    *   Returns success or error messages based on validation results.
+*   **Server-Side Security (Node.js/Express)**:
+    *   **SQL Injection Prevention**: Uses parameterized queries with SQLite to safely handle user input.
+    *   **XSS Protection**: Implements `helmet` to set secure HTTP headers (including CSP) and uses `express-validator` to sanitize inputs.
+    *   **Input Validation**: Re-validates email format and password length on the server.
 
 ## Prerequisites
 
