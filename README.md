@@ -46,7 +46,3 @@ The project consists of a static frontend (`index.html`, `style.css`, `script.js
 
 *   **Email**: Must be non-empty and contain "@".
 *   **Password**: Must be non-empty and have a minimum length of 8 characters.
-
-## GitHub Repository
-
-[Link to your GitHub repository here]
